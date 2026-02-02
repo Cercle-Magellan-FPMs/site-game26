@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 import heroImage from "@images/heroImage.svg";
 import BANNER from "@images/website-banner.png";
-import logo from "@images/Logo_Game25_New_Colors.svg";
+import logo from "@images/Logo_Game26_New_Colors.svg";
 import Card from "@components/Card.astro";
 import Sponsors from "@components/Sponsors.astro";
 
@@ -12,11 +12,15 @@ import LOL from "@images/lol.png";
 import ROCKET_LEAGUE from "@images/rocket-league.png";
 import SSBU from "@images/ssbu-white.png";
 import MK8 from "@images/mk8.png";
+import FC26 from "@images/fc26.png";
+import VALO from "@images/valo.png";
 
 import LOL_BACKGROUND from "@images/lol.jpg";
 import ROCKET_LEAGUE_BACKGROUND from "@images/rocket-league.jpg";
 import SSBU_BACKGROUND from "@images/ssbu.jpg";
 import MK8_BACKGROUND from "@images/mk8.jpg";
+import FC26_BACKGROUND from "@images/fc26.jpg";
+import VALO_BACKGROUND from "@images/valo.jpg";
 
 import Wavenet from "@images/sponsors/wavenet.png";
 import Weloveat from "@images/sponsors/weloveat.png";
@@ -38,16 +42,16 @@ const tournois = [
     image: LOL,
     background: LOL_BACKGROUND,
     description:
-      "Une draft en 5v5 à jusqu'à 16 équipes. Venez montrer vos talents sur la faille de l'invocateur !",
-    link: "https://forms.gle/aovyUxUzdpBo8mUN8",
+      "Une draft en 5v5 à jusqu'à 12 équipes. Venez montrer vos talents sur la faille de l'invocateur !",
+    link: "https://forms.gle/TCq3nJoaeTTR9Etf7",
   },
   {
-    name: "Rocket League 2v2",
-    image: ROCKET_LEAGUE,
-    background: ROCKET_LEAGUE_BACKGROUND,
+    name: "VALORANT",
+    image: VALO,
+    background: VALO_BACKGROUND,
     description:
-      "Un tournoi en 2v2 où coordination et technique seront essentielles ! Formez votre duo, dominez les airs et marquez des buts spectaculaires pour décrocher la victoire.",
-    link: "https://forms.gle/SQQCJToCcVeW4UoQ8",
+      "xxx",
+    link: "https://forms.gle/ASyt2j66R74RyQiQ9",
   },
   {
     name: "Super Smash Bros Ultimate",
@@ -55,24 +59,42 @@ const tournois = [
     background: SSBU_BACKGROUND,
     description:
       "Un tournoi en 1v1 où seul le meilleur combattant triomphera ! Choisissez votre personnage, enchaînez les combos et envoyez vos adversaires hors de l'arène.",
-    link: "https://forms.gle/8R65SLx8nxhLhJNd7",
+    link: "https://forms.gle/LM5pW4jErxKxRD9f8",
   },
   {
-    name: "Mario Kart 8",
-    image: MK8,
-    background: MK8_BACKGROUND,
+    name: "FIFA 26",
+    image: FC26,
+    background: FC26_BACKGROUND,
     description:
-      "Un tournoi en 1v12 où chaque course est une bataille acharnée ! Entre dérapages maîtrisés, objets imprévisibles et circuits dynamiques, seul le plus rusé franchira la ligne d'arrivée en tête.",
-    link: "https://forms.gle/8NKAgGQ4JjYtk3ws8",
+      "xxx",
+    link: "https://forms.gle/u8tgex7kmPoprAwQA",
   },
 ];
 
 const sponsors = [
-  { name: "Necko Technologies", url: "https://www.necko.tech/", image: Necko },
+  
   {
     name: "DS Wallonie",
     url: "https://www.dswallonie.be/fr/",
     image: DSWallonie,
+  },
+  {
+    name: "Noctua",
+    url: "https://noctua.at/fr/",
+    image: Noctua,
+  },
+];
+
+const oldSponsors = [
+  {
+    name: "Les Buses",
+    url: "#",
+    image: LesBuses,
+  },
+  { 
+    name: "Necko Technologies", 
+    url: "https://www.necko.tech/", 
+    image: Necko 
   },
   {
     name: "Loca Copy",
@@ -89,19 +111,6 @@ const sponsors = [
     url: "https://www.facebook.com/ORE.UMONS/",
     image: ORE,
   },
-  {
-    name: "Noctua",
-    url: "https://noctua.at/fr/",
-    image: Noctua,
-  },
-  {
-    name: "Les Buses",
-    url: "#",
-    image: LesBuses,
-  },
-];
-
-const oldSponsors = [
   {
     name: "Wavenet",
     url: "https://wavenet.be/",
@@ -167,7 +176,7 @@ const oldSponsors = [
             </h1>
             <p class="pb-4 xl:pb-6">Envie d'y participer ?</p>
             <a
-              href="https://www.facebook.com/events/2000290947160373"
+              href="https://www.facebook.com/events/827729983350631/"
               target="_blank"
               class="inline-block rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-2 font-semibold text-white transition duration-150 hover:bg-blue-50 hover:text-indigo-950"
             >
@@ -178,7 +187,7 @@ const oldSponsors = [
         <Image
           class="z-10 h-full w-full object-fill drop-shadow-lg"
           src={heroImage}
-          alt={"Illustration d'une LAN Party - Game 25"}
+          alt={"Illustration d'une LAN Party - Game 26"}
           format="webp"
         />
         {
@@ -187,7 +196,7 @@ const oldSponsors = [
               <Image
                 class="h-full w-full object-cover opacity-20"
                 src={BANNER}
-                alt="Game 25"
+                alt="Game 26"
                 quality={30}
                 format="webp"
               />
@@ -200,10 +209,10 @@ const oldSponsors = [
       class="mx-auto grid grid-rows-2 items-center gap-4 px-4 py-10 lg:container sm:grid-cols-[1fr_auto] sm:grid-rows-1"
     >
       <div class="space-y-1">
-        <h2 class="pb-2 text-4xl font-semibold">Le Game 25</h2>
+        <h2 class="pb-2 text-4xl font-semibold">Le Game 26</h2>
         <p>
           Cette année encore, le Cercle Magellan remet le couvert et a le
-          plaisir de vous annoncer la 25ème édition de sa LAN party, le Game !
+          plaisir de vous annoncer la 26ème édition de sa LAN party, le Game !
         </p>
         <p>
           Le Game est une LAN party organisée par le Cercle Magellan, le Cercle
@@ -213,13 +222,13 @@ const oldSponsors = [
         </p>
         <p>
           Cette édition du Game se déroulera du <strong
-            >vendredi 21 mars 2025 à 19h au dimanche 23 mars 2024 à 16h</strong
+            >vendredi 27 février 2026 à 18h au dimanche 1er mars 2026 à 16h</strong
           >.
         </p>
         <p>
           Pour plus d'informations, rendez-vous sur{" "}
           <a
-            href="https://www.facebook.com/events/2000290947160373"
+            href="https://www.facebook.com/events/827729983350631/"
             class="underline duration-150 hover:translate-x-2 hover:opacity-90"
           >
             la page facebook de l'événement.</a
@@ -229,7 +238,7 @@ const oldSponsors = [
       <Image
         class="mx-auto max-w-64"
         src={logo}
-        alt="Game 25"
+        alt="Game 26"
         quality={30}
         format="webp"
       />
